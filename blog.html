@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Sophie's Blog</title>
+</head>
+<body>
+  <nav>
+    <div class="wrapper">
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href=".about">About</a></li>
+        <li><a href="./home.html" class="logo"><h2>Sophie<span class="sr-only"> - Blog page</span></h2></a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav> <!-- END of NAV -->
+  <header>
+    <div class="wrapper">
+      <h1>Blog</h1>
+    </div>
+  </header> <!-- END of Header -->
+  <main>
+    <div class="wrapper">
+      <aside class="blogInfo">
+        <div class="aboutSophie">
+          <img src="./assets/blog-image-2.jpg" alt="Sophie holding oranges like glasses">
+          <h4>About Sophie</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus obcaecati officia eaque aspernatur numquam perspiciatis! <span>Find out more.</span></p>
+        </div>
+        <div class="recentPostsLink">
+          <h4>Recent Posts</h3>
+          <ul>
+            <li><a href="#">Donec facillisis tortor ut</a></li>
+            <li><a href="#">Augue lacinia at viverra</a></li>
+            <li><a href="#">Semper sed sapien metus</a></li>
+            <li><a href="#">Scelerisque nec pharetra id</a></li>
+          </ul>
+        </div>
+      </aside> <!-- END of blog info section-->
+      <article class="blogPost">
+        <div class="currentBlogPost">
+          <h3>Why I became a blogger</h3>
+          <p class="blogPublisher">Monday October 8th, 2018 by <span>Sophie Barlow</span></p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam inventore. Omnis nemo recusandae fugit. Nostrum harum reiciendis eaque asperiores voluptas laborum eum beatae, ipsam voluptatum. Aperiam rem repudiandae omnis!<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident error mollitia ipsa animi, officia nihil dolorum, doloremque totam alias illum obcaecati quas adipisci! Voluptas, tempore consectetur officia fugiat quae voluptatum!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ut dicta accusantium explicabo omnis blanditiis et sapiente odio nesciunt ullam quae nisi est possimus ratione rem corrupti fuga temporibus adipisci error, fugit excepturi sunt sit modi. Recusandae perferendis qui, beatae adipisci totam dolorem repellat. Quaerat beatae quam nostrum enim cumque.<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aspernatur ullam ab voluptatem magnam accusamus, pariatur voluptatum exercitationem ipsam commodi.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis omnis ducimus optio exercitationem nam odit doloribus ipsa blanditiis soluta et!<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ratione sed, ipsum ullam quibusdam libero aspernatur iure corporis itaque harum deleniti obcaecati est minima eaque omnis laboriosam repudiandae atque unde. Odit nesciunt at nobis ipsam perspiciatis eaque, quam atque dolorum ullam possimus iure consequuntur quo commodi, odio a inventore corporis.</p>
+        </div>
+        <div class="commentContainer">
+          <div class="commentPostOne">
+            <div class="commentPostOneImage">
+              <img src="./assets/blog-image-3.jpg" alt="picture of Jeremy">
+            </div>
+            <div class="commentPostOneText">
+              <p class="commentPoster">Tuesday October 9th, 2018 by <span>Jeremy</span></p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quisquam mollitia earum non reprehenderit temporibus quasi delectus, exercitationem minima tempore at animi accusamus obcaecati? Quas dolorem recusandae velit alias dicta?</p>
+            </div>
+          </div>
+          <div class="commentPostTwo">
+            <div class="commentPostTwoImage">
+              <img src="./assets/blog-image-4.jpg" alt="picture of Julia">
+            </div>
+            <div class="commentPostTwoText">
+              <p class="commentPoster">Wednesday October 10th, 2018 by <span>Julia</span></p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem numquam corporis animi placeat eaque modi delectus esse deserunt alias?</p>
+            </div>
+          </div>
+        </div>
+      </article> <!-- End of blog/comment post section-->
+      <div class="postCommentFormContainer">
+        <form action="#" method="POST" class="contactForm" name="contactForm">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" placeholder="Name">
+        
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" placeholder="Email address">
+        
+          <label for="comment" class="sr-only">Comment</label>
+          <textarea name="comment" id="comment" cols="1" rows="1" placeholder="Comment"></textarea>
+
+          <button class="blogPageButton">Post Comment</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="wrapper">
+      <p>Copyright @ 2022 Juno</p>
+    </div>
+  </footer>
+</body>
+</html>
