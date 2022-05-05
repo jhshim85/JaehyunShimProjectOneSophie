@@ -271,16 +271,19 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-family: "Lora", serif;
+  font-size: 2.1rem;
   text-transform: uppercase;
 }
 
 h3 {
   font-size: 1.6rem;
+  text-transform: uppercase;
 }
 
 h4 {
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 p {
@@ -292,12 +295,15 @@ p {
 button {
   line-height: 32px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 a {
   line-height: 29px;
   text-align: right;
   text-decoration: none;
+  text-transform: uppercase;
+  color: #2c2c2c;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -328,4 +334,30 @@ img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #f6a823;
+  color: #2c2c2c;
+}
+nav .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .wrapper ul a {
+  padding: 15px 30px;
+}
+nav .wrapper ul a h2 {
+  margin: 0;
+  padding: 0 30px;
 }
