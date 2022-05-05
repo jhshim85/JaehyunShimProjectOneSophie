@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lora", serif;
+  src: url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+  font-weight: Bold 700;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: $mainFont;
+  font-size: $baseFontSize;
+  color: $blackColor;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-family: $headerFont;
+  font-size: 4rem;
+  line-height: 92px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  line-height: 32px;
+  letter-spacing: 0px;
+  font-weight: normal;
+}
+
+button {
+  line-height: 32px;
+  text-align: center;
+}
+
+a {
+  line-height: 29px;
+  text-align: right;
+  text-decoration: none;
+  transition: 0.2s;
+  // cursor: pointer;
+}
+
+footer {
+  font-size: 1.2rem;
+  color: rgb(246, 246, 246);
+}
+
+ul, li, a, input {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
