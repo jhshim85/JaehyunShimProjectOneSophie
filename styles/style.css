@@ -300,7 +300,6 @@ button {
 
 a {
   line-height: 29px;
-  text-align: right;
   text-decoration: none;
   text-transform: uppercase;
   color: #2c2c2c;
@@ -336,6 +335,13 @@ img {
      object-fit: cover;
 }
 
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #05afc1;
+  cursor: pointer;
+}
+
 nav {
   position: sticky;
   top: 0;
@@ -362,10 +368,10 @@ nav .wrapper ul a h2 {
   padding: 0 30px;
 }
 
-header {
+.homeHeader {
   background-color: #f6a823;
 }
-header .headerContainer {
+.homeHeader .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,7 +386,7 @@ header .headerContainer {
   -ms-flex-line-pack: start;
       align-content: flex-start;
 }
-header .headerContainer .headerTextContainer {
+.homeHeader .headerContainer .headerTextContainer {
   min-width: 350px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 45%;
@@ -389,7 +395,7 @@ header .headerContainer .headerTextContainer {
   -ms-flex-item-align: center;
       align-self: center;
 }
-header .headerContainer .headerTextContainer h1 {
+.homeHeader .headerContainer .headerTextContainer h1 {
   display: inline-block;
   position: relative;
   -ms-flex-item-align: center;
@@ -397,7 +403,7 @@ header .headerContainer .headerTextContainer h1 {
   top: 0;
   left: 0;
 }
-header .headerContainer .headerTextContainer h1::before {
+.homeHeader .headerContainer .headerTextContainer h1::before {
   content: "";
   background-image: url(../assets/circle-text.png);
   background-size: contain;
@@ -409,7 +415,7 @@ header .headerContainer .headerTextContainer h1::before {
   top: -50px;
   left: -50px;
 }
-header .headerContainer .headerImageContainer {
+.homeHeader .headerContainer .headerImageContainer {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 45%;
           flex: 1 0 45%;
@@ -418,11 +424,13 @@ header .headerContainer .headerImageContainer {
   -ms-flex-item-align: center;
       align-self: center;
 }
-header .headerContainer .headerImageContainer img {
+.homeHeader .headerContainer .headerImageContainer img {
   width: 60%;
   height: auto;
+  min-width: 350px;
   position: absolute;
   top: 0;
+  left: 100px;
   right: 0;
   -webkit-box-shadow: 20px 20px 0 white;
           box-shadow: 20px 20px 0 white;
@@ -462,6 +470,7 @@ main .sophieThing {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
 }
 main .sophieThing .favouriteThing {
   display: -webkit-box;
@@ -481,9 +490,19 @@ main .sophieThing .favouriteThing .favouriteImageContainer {
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
   background-color: #a82706;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 main .sophieThing .favouriteThing .favouriteImageContainer img {
   width: 80%;
+  -webkit-transform: translate(-20px, -20px);
+          transform: translate(-20px, -20px);
 }
 main .sophieThing .favouriteThing .favouriteTextContainer {
   -webkit-box-flex: 1;
@@ -496,9 +515,9 @@ main .sophieThing .favouriteThing .favouriteTextContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -518,6 +537,7 @@ main .sophieThing .travelled {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: right;
 }
 main .sophieThing .travelled .travelledTextContainer {
   -webkit-box-flex: 1;
@@ -530,12 +550,12 @@ main .sophieThing .travelled .travelledTextContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 main .sophieThing .travelled .travelledTextContainer .wrapper {
   width: 80%;
@@ -545,7 +565,156 @@ main .sophieThing .travelled .travelledImageContainer {
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
   background-color: #f6a823;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
 }
 main .sophieThing .travelled .travelledImageContainer img {
   width: 80%;
+  -webkit-transform: translate(-20px, -20px);
+          transform: translate(-20px, -20px);
+}
+main .sophieJourney {
+  background-color: #f0efed;
+}
+main .sophieJourney .extraLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0;
+}
+main .sophieJourney .extraLinks ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(40% - 95px);
+          flex: 1 0 calc(40% - 95px);
+  margin-left: 95px;
+}
+main .sophieJourney .extraLinks ul li h3 {
+  position: relative;
+  display: inline-block;
+}
+main .sophieJourney .extraLinks ul li h3::before {
+  font-family: "FontAwesome";
+  font-size: 1.6rem;
+  border-radius: 50%;
+  background-color: #f6a823;
+  color: #2c2c2c;
+  padding: 20px;
+  text-align: center;
+  vertical-align: center;
+  position: absolute;
+  top: -25px;
+  left: -85px;
+}
+main .sophieJourney .extraLinks ul li .photosLink::before {
+  content: "\f03e";
+}
+main .sophieJourney .extraLinks ul li .aboutLink::before {
+  content: "\f007";
+}
+main .sophieJourney .extraLinks ul li .blogLink::before {
+  content: "\e163";
+}
+main .sophieJourney .extraLinks ul li .getInTouchLink::before {
+  content: "\f879";
+}
+main .sophieJourney img {
+  width: 100%;
+}
+main .sophieJourney .aboutJourney {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0;
+}
+main .sophieJourney .aboutJourney .journeyImageContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+}
+main .sophieJourney .aboutJourney .journeyImageContainer img {
+  width: 80%;
+  -webkit-box-shadow: 20px 20px 0 #f6a823;
+          box-shadow: 20px 20px 0 #f6a823;
+}
+main .sophieJourney .aboutJourney .journeyTextContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(70% - 100px);
+          flex: 1 0 calc(70% - 100px);
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+main .sophieJourney .aboutJourney .journeyTextContainer h2, main .sophieJourney .aboutJourney .journeyTextContainer p, main .sophieJourney .aboutJourney .journeyTextContainer button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+main .extraPictures {
+  margin: 50px 0;
+}
+main .extraPictures .extraPicturesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+main .extraPictures .extraPicturesContainer li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(33.3333333333% - 20px);
+          flex: 1 0 calc(33.3333333333% - 20px);
+  height: 400px;
+  min-width: 400px;
+}
+main .extraPictures .extraPicturesContainer li img {
+  min-width: 350px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #4f4f4f;
+  color: #f0efed;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  padding: 10px 0;
 }

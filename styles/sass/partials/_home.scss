@@ -1,4 +1,4 @@
-header {
+.homeHeader {
   background-color: $orangeColor;
   .headerContainer {
     display: flex;
@@ -7,10 +7,8 @@ header {
     align-items: center;
     align-content: flex-start;
     .headerTextContainer {
-      // width: calc(50% - 100px);
       min-width: 350px;
       flex: 1 0 45%;
-      // padding: 0 50px;
       text-align: center;
       align-self: center;
       h1 {
@@ -34,31 +32,20 @@ header {
       }
     }
     .headerImageContainer {
-      // width: calc(50% - 100px);
       flex: 1 0 45%;
       height: 500px;
-      // padding: 0 50px;
       position: relative;
       align-self: center;
       img {
         width: 60%;
         height: auto;
+        min-width: 350px;
         position: absolute;
         top: 0;
-        // left: 100px;
+        left: 100px;
         right: 0;
         box-shadow: 20px 20px 0 white;
-        // z-index: 10;
       }
-      // .headerImageSquare {
-      //   display: block;
-      //   width: 80%;
-      //   height: 85%;
-      //   background-color: white;
-      //   position: absolute;
-      //   bottom: 0;
-      //   right: 0;
-      // }
     }
   }
 }
@@ -80,6 +67,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: left;
     .favouriteThing {
       display: flex;
       justify-content: center;
@@ -88,15 +76,19 @@ main {
       .favouriteImageContainer {
         flex: 1 0 50%;
         background-color: $redColor;
+        display: flex;
+        justify-content: flex-end;
+        transform: translateY(-30px);
         img {
           width: 80%;
+          transform: translate(-20px, -20px);
         }
       }
       .favouriteTextContainer {
         flex: 1 0 50%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
         .wrapper {
           width: 80%;
@@ -108,12 +100,13 @@ main {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+      text-align: right;
       .travelledTextContainer {
         flex: 1 0 50%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: flex-end;
         .wrapper {
           width: 80%;
         }
@@ -121,8 +114,102 @@ main {
       .travelledImageContainer {
         flex: 1 0 50%;
         background-color: $orangeColor;
+        display: flex;
+        justify-content: flex-start;
+        transform: translateY(50px);
         img {
           width: 80%;
+          transform: translate(-20px, -20px);
+        }
+      }
+    }
+  }
+  .sophieJourney {
+    background-color: $whiteShadeColor;
+    .extraLinks ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 0;
+      li {
+        flex: 1 0 calc(40% - 95px);
+        margin-left: 95px;
+        h3 {
+          position: relative;
+          display: inline-block;
+        }
+        h3::before {
+          font-family: "FontAwesome";
+          font-size: 1.6rem;
+          border-radius: 50%;
+          background-color: $orangeColor;
+          color: $blackColor;
+          padding: 20px;
+          text-align: center;
+          vertical-align: center;
+          position: absolute;
+          top: -25px;
+          left: -85px;
+        }
+        .photosLink::before {
+          content: "\f03e";
+        }
+        .aboutLink::before {
+          content: "\f007";
+        }
+        .blogLink::before {
+          content: "\e163";
+        }
+        .getInTouchLink::before {
+          content: "\f879";
+        }
+      }
+    }
+    img {
+      width: 100%;
+    }
+    .aboutJourney {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 100px 0;
+      .journeyImageContainer {
+        flex: 1 0 30%;
+        img {
+          width: 80%;
+          box-shadow: 20px 20px 0 $orangeColor;
+        }
+      }
+      .journeyTextContainer {
+        flex: 1 0 calc(70% - 100px);
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        h2, p, button {
+          flex: 1 0 auto;
+        }
+      }
+    }
+  }
+  .extraPictures {
+    margin: 50px 0;
+    .extraPicturesContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      li {
+        flex: 1 0 calc(100% / 3 - 20px);
+        height: 400px;
+        min-width: 400px;
+        img {
+          min-width: 350px;
+          height: 100%;
+          margin: 0 auto;
         }
       }
     }

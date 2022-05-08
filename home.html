@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://kit.fontawesome.com/daf18e1bf9.js" crossorigin="anonymous"></script>
   <title>All About SOPHIE</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
       </ul>
     </div>
   </nav> <!-- END of NAV -->
-  <header>
+  <header class="homeHeader">
     <div class="wrapper">
       <div class="headerContainer">
         <div class="headerTextContainer">
@@ -27,7 +28,6 @@
         </div>
         <div class="headerImageContainer">
           <img src="./assets/home-image-1.jpg" alt="Sophie holding oranges like glasses">
-          <!-- <div class="headerImageSquare"></div> -->
         </div>
       </div>
     </div>
@@ -41,60 +41,57 @@
       </div>
     </section> <!-- END of Intro section -->
     <section class="sophieThing">
-      <!-- <div class="wrapper"> -->
-        <div class="favouriteThing">
-          <div class="favouriteImageContainer">
-            <img src="./assets/home-image-2.jpg" alt="Picture of Sophie's dog">
-            <!-- <div class="favouriteImageSquare"></div> -->
-          </div>
-          <div class="favouriteTextContainer">
-            <div class="wrapper">
-              <h3>Sophie's Favourite Things</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolor minus. Officia velit sunt laborum laudantium error labore iure unde quasi distinctio eaque libero numquam, dolorem odio, temporibus, perferendis dolor.</p>
-              <button class="homePageButton">read more</button>
-            </div>
+      <div class="favouriteThing">
+        <div class="favouriteImageContainer">
+          <img src="./assets/home-image-2.jpg" alt="Picture of Sophie's dog">
+        </div>
+        <div class="favouriteTextContainer">
+          <div class="wrapper">
+            <h3>Sophie's Favourite Things</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolor minus. Officia velit sunt laborum laudantium error labore iure unde quasi distinctio eaque libero numquam, dolorem odio, temporibus, perferendis dolor.</p>
+            <button class="homePageButton">read more</button>
           </div>
         </div>
-        <div class="travelled">
-          <div class="travelledTextContainer">
-            <div class="wrapper">
-              <h3>Where she's travelled</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus doloremque dicta aperiam consectetur velit vero praesentium eveniet corrupti incidunt molestias! Aliquid suscipit vel magni sit ea, ipsam in quod sequi.</p>
-              <button class="homePageButton">read more</button>
-            </div>
-          </div>
-          <div class="travelledImageContainer">
-            <img src="./assets/home-image-3.jpg" alt="Picture of Sophie's favourite place she travelled">
-            <div class="travelledImageSquare"></div>
+      </div>
+      <div class="travelled">
+        <div class="travelledTextContainer">
+          <div class="wrapper">
+            <h3>Where she's travelled</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus doloremque dicta aperiam consectetur velit vero praesentium eveniet corrupti incidunt molestias! Aliquid suscipit vel magni sit ea, ipsam in quod sequi.</p>
+            <button class="homePageButton">read more</button>
           </div>
         </div>
-      <!-- </div> -->
+        <div class="travelledImageContainer">
+          <img src="./assets/home-image-3.jpg" alt="Picture of Sophie's favourite place she travelled">
+          <div class="travelledImageSquare"></div>
+        </div>
+      </div>
     </section> <!-- END of Thing section -->
     <section class="sophieJourney">
       <div class="wrapper">
         <div class="extraLinks">
           <ul>
             <li>
-              <a href="">
-                <h3>Photos</h3>
+              <a href="#">
+                <h3 class="photosLink">Photos</h3>
               </a>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt.</p>
             </li>
             <li>
-              <a href="">
-                <h3>About</h3>
+              <a href="#">
+                <h3 class="aboutLink">About</h3>
               </a>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, modi!</p>
             </li>
             <li>
-              <a href="">
-                <h3>Blog</h3>
+              <a href="#">
+                <h3 class="blogLink">Blog</h3>
               </a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, incidunt.</p>
             </li>
             <li>
-              <a href="">
-                <h3>Get in Touch</h3>
+              <a href="#">
+                <h3 class="getInTouchLink">Get in Touch</h3>
               </a>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, officiis.</p>
             </li>
@@ -106,11 +103,10 @@
         <div class="aboutJourney">
           <div class="journeyImageContainer">
             <img src="./assets/home-image-5.jpg" alt="picture of Sophie standing infront of building">
-            <div class="journeyImageSquare"></div>
           </div>
           <div class="journeyTextContainer">
             <h2>Sophie's Journey</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quidem reiciendis mollitia! Ipsam molestias repudiandae culpa minus ullam ratione velit earum sunt sequi sit aspernatur iste nulla, quod nostrum voluptatibus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit excepturi nostrum earum sequi, ea porro necessitatibus sunt modi laudantium culpa veniam sint sed consectetur nisi rerum eveniet maxime beatae dignissimos atque fugit. Aliquam exercitationem dignissimos, praesentium adipisci facilis nihil, modi quasi laborum, mollitia expedita optio quia nesciunt dolore obcaecati.</p>
             <button class="homePageButton">find out more</button>
           </div>
         </div> <!-- END of Journey section -->
@@ -118,9 +114,17 @@
     </section>
     <section class="extraPictures">
       <div class="wrapper">
-        <img src="./assets/home-image-6.jpg" alt="picture of bicycle infront of orange wall">
-        <img src="./assets/home-image-7.jpg" alt="picture of orange-color building">
-        <img src="./assets/home-image-8.jpg" alt="picture of orange umbrella from Banana Beach">
+        <ul class="extraPicturesContainer">
+          <li>
+            <img src="./assets/home-image-6.jpg" alt="picture of bicycle infront of orange wall">
+          </li>
+          <li>
+            <img src="./assets/home-image-7.jpg" alt="picture of orange-color building">
+          </li>
+          <li>
+            <img src="./assets/home-image-8.jpg" alt="picture of orange umbrella from Banana Beach">
+          </li>
+        </ul>
       </div>
     </section>
   </main>

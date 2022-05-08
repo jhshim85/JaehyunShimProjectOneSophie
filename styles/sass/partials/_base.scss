@@ -11,3 +11,9 @@ img {
   object-fit: cover;
 }
 
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: $tealColor;
+  cursor: pointer;
+}
