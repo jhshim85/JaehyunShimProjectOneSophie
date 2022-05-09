@@ -4,16 +4,29 @@ nav {
   z-index: 10;
   background-color: $orangeColor;
   color: $blackColor;
-  .wrapper ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    a {
-      padding: 15px 30px;
-      h2 {
-        font-family: $headerFont;
-        padding: 0 30px;
+  .wrapper {
+    position: relative;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        padding: 15px 30px;
+        h2 {
+          font-family: $headerFont;
+          padding: 0 30px;
+        }
       }
+    }
+    .fa-ellipsis-vertical {
+      position: absolute;
+      visibility: hidden;
+      display: block;
+      color: $greyColor;
+      top: 0;
+      left: -100px;
+      font-weight: bold;
+      font-size: 1.5rem;
     }
   }
 }

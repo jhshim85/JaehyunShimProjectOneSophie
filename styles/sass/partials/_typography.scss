@@ -70,7 +70,12 @@ a {
   text-transform: uppercase;
   color: $blackColor;
   transition: 0.2s;
-  // cursor: pointer;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  color: rgb(246, 246, 246);
 }
 
 footer {

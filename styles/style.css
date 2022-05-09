@@ -306,6 +306,12 @@ a {
   color: #2c2c2c;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  color: rgb(246, 246, 246);
 }
 
 footer {
@@ -350,6 +356,9 @@ nav {
   background-color: #f6a823;
   color: #2c2c2c;
 }
+nav .wrapper {
+  position: relative;
+}
 nav .wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,6 +376,16 @@ nav .wrapper ul a {
 nav .wrapper ul a h2 {
   font-family: "Lora", serif;
   padding: 0 30px;
+}
+nav .wrapper .fa-ellipsis-vertical {
+  position: absolute;
+  visibility: hidden;
+  display: block;
+  color: #4f4f4f;
+  top: 0;
+  left: -100px;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -396,12 +415,13 @@ footer p {
           align-items: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  gap: 20px;
 }
 .homeHeader .headerContainer .headerTextContainer {
   min-width: 350px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 45%;
-          flex: 1 0 45%;
+      -ms-flex: 1 0 calc(45% - 20px);
+          flex: 1 0 calc(45% - 20px);
   text-align: center;
   -ms-flex-item-align: center;
       align-self: center;
@@ -428,8 +448,8 @@ footer p {
 }
 .homeHeader .headerContainer .headerImageContainer {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 45%;
-          flex: 1 0 45%;
+      -ms-flex: 1 0 calc(55% - 20px);
+          flex: 1 0 calc(55% - 20px);
   height: 500px;
   position: relative;
   -ms-flex-item-align: center;

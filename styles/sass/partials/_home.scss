@@ -6,9 +6,10 @@
     justify-content: center;
     align-items: center;
     align-content: flex-start;
+    gap: 20px;
     .headerTextContainer {
       min-width: 350px;
-      flex: 1 0 45%;
+      flex: 1 0 calc(45% - 20px);
       text-align: center;
       align-self: center;
       h1 {
@@ -32,7 +33,7 @@
       }
     }
     .headerImageContainer {
-      flex: 1 0 45%;
+      flex: 1 0 calc(55% - 20px);
       height: 500px;
       position: relative;
       align-self: center;
