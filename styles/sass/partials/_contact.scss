@@ -1,0 +1,82 @@
+.contactHeader {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  h1 {
+    margin: 0;
+    position: relative;
+    bottom: -350px;
+    left: 0;
+  }
+}
+
+.contactMain {
+  padding: 150px 0;
+  background-color: $whiteShadeColor;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    .contactInfo {
+      flex: 1 0 30%;
+      background-color: white;
+      align-self: flex-start;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding: 35px;
+      .snsIcons {
+        display: flex;
+        align-items: flex-start;
+        .fa-brands {
+          color: $orangeColor;
+          font-size: 1.5rem;
+          margin-right: 25px;
+        }
+      }
+      .infoEmail {
+        font-weight: bold;
+      }
+    }
+    .contactForm {
+      flex: 1 0 65%;
+      .contactFormContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        .contactName,
+        .contactEmail {
+          flex: 1 0 calc(50% - 20px);
+        }
+        .contactMessage,
+        .contactPageButton {
+          flex: 1 0 100%;
+        }
+        .contactName input,
+        .contactEmail input,
+        .contactMessage textarea {
+          display: block;
+          width: 100%;
+          border: none;
+          padding: 20px 0 20px 30px;
+        }
+        input::placeholder,
+        textarea::placeholder {
+          font-style: italic;
+        }
+        .contactName input,
+        .contactEmail input {
+          height: 100px;
+        }
+        .contactMessage textarea {
+          height: 500px;
+        }
+      }
+    }
+  }
+}
