@@ -1,0 +1,184 @@
+.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  h1 {
+    margin: 0;
+    position: relative;
+    bottom: -350px;
+    left: 0;
+  }
+}
+
+main {
+  padding: 150px 0;
+  background-color: $whiteShadeColor;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    .blogInfo {
+      flex: 1 0 30%;
+      align-self: flex-start;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      flex-wrap: wrap;
+      p {
+        margin: 0;
+      }
+      .aboutSophie,
+      .recentPostsLink {
+        padding: 35px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+      .recentPostsLink {
+        margin-top: 50px;
+        padding: 35px;
+        h4 {
+          margin-top: 0;
+        }
+        ul li {
+          padding-left: 10px;
+        }
+        ul li::before {
+          content: "\2022";
+          color: $orangeColor;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+        }
+        a {
+          font-weight: normal;
+          text-transform: none;
+        }
+      }
+    }
+    .blogMain {
+      flex: 1 0 65%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 50px;
+      .blogPost {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        .currentBlogPost {
+          background-color: white;
+          padding: 35px;
+          border-bottom: 5px solid $orangeColor;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+          h3 {
+            margin: 0;
+          }
+          .blogPublisher {
+            font-style: italic;
+            padding: 15px 0;
+            span {
+              color: $greyBlueColor;
+              font-weight: bold;
+            }
+          }
+          p {
+            margin: 0;
+            br {
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .commentContainer {
+          display: flex;
+          flex-direction: column;
+          justify-self: flex-start;
+          align-items: flex-start;
+          text-align: left;
+          gap: 25px;
+          .commentPostOne {
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+            padding: 35px;
+            gap: 20px;
+            .commentPostOneImage {
+              flex: 1 0 15%;
+            }
+            .commentPostOneText {
+              flex: 1 0 80%;
+              .commentPoster {
+                font-style: italic;
+                font-weight: bold;
+                color: $greyBlueColor;
+                margin: 10px 0;
+              }
+            }
+          }
+          .commentPostTwo {
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+            padding: 35px;
+            gap: 20px;
+            border-bottom: 5px solid $orangeColor;
+            .commentPostTwoImage {
+              flex: 1 0 15%;
+            }
+            .commentPostTwoText {
+              flex: 1 0 80%;
+              .commentPoster {
+                font-style: italic;
+                font-weight: bold;
+                color: $greyBlueColor;
+                margin: 10px 0;
+              }
+            }
+          }
+        }
+      }
+      .postCommentFormContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;  
+        gap: 20px;
+        .formName,
+        .formEmail {
+          flex: 1 0 calc(50% - 20px);
+        }
+        .formComment,
+        .blogPageButton {
+          flex: 1 0 100%;
+        }
+        .formName input,
+        .formEmail input,
+        .formComment textarea {
+          display: block;
+          width: 100%;
+          border: none;
+          padding: 20px 0 20px 30px;
+        }
+        input::placeholder,
+        textarea::placeholder {
+          font-style: italic;
+        }
+        .formName input,
+        .formEmail input {
+          height: 100px;
+        }
+        .formComment textarea {
+          height: 500px;
+        }
+      }
+    }
+  }
+}

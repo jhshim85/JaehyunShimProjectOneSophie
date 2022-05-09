@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -368,6 +369,16 @@ nav .wrapper ul a h2 {
   padding: 0 30px;
 }
 
+footer {
+  background-color: #4f4f4f;
+  color: #f0efed;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  padding: 10px 0;
+}
+
 .homeHeader {
   background-color: #f6a823;
 }
@@ -709,12 +720,278 @@ main .extraPictures .extraPicturesContainer li img {
   margin: 0 auto;
 }
 
-footer {
-  background-color: #4f4f4f;
-  color: #f0efed;
-  text-align: center;
+.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
 }
-footer p {
+.blogHeader h1 {
   margin: 0;
-  padding: 10px 0;
+  position: relative;
+  bottom: -350px;
+  left: 0;
+}
+
+main {
+  padding: 150px 0;
+  background-color: #f0efed;
+}
+main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 50px;
+}
+main .wrapper .blogInfo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main .wrapper .blogInfo p {
+  margin: 0;
+}
+main .wrapper .blogInfo .aboutSophie,
+main .wrapper .blogInfo .recentPostsLink {
+  padding: 35px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+main .wrapper .blogInfo .recentPostsLink {
+  margin-top: 50px;
+  padding: 35px;
+}
+main .wrapper .blogInfo .recentPostsLink h4 {
+  margin-top: 0;
+}
+main .wrapper .blogInfo .recentPostsLink ul li {
+  padding-left: 10px;
+}
+main .wrapper .blogInfo .recentPostsLink ul li::before {
+  content: "•";
+  color: #f6a823;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+main .wrapper .blogInfo .recentPostsLink a {
+  font-weight: normal;
+  text-transform: none;
+}
+main .wrapper .blogMain {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 65%;
+          flex: 1 0 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 50px;
+}
+main .wrapper .blogMain .blogPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 50px;
+}
+main .wrapper .blogMain .blogPost .currentBlogPost {
+  background-color: white;
+  padding: 35px;
+  border-bottom: 5px solid #f6a823;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+main .wrapper .blogMain .blogPost .currentBlogPost h3 {
+  margin: 0;
+}
+main .wrapper .blogMain .blogPost .currentBlogPost .blogPublisher {
+  font-style: italic;
+  padding: 15px 0;
+}
+main .wrapper .blogMain .blogPost .currentBlogPost .blogPublisher span {
+  color: #285e64;
+  font-weight: bold;
+}
+main .wrapper .blogMain .blogPost .currentBlogPost p {
+  margin: 0;
+}
+main .wrapper .blogMain .blogPost .currentBlogPost p br {
+  margin-bottom: 15px;
+}
+main .wrapper .blogMain .blogPost .commentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  gap: 25px;
+}
+main .wrapper .blogMain .blogPost .commentContainer .commentPostOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: white;
+  padding: 35px;
+  gap: 20px;
+}
+main .wrapper .blogMain .blogPost .commentContainer .commentPostOne .commentPostOneImage {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 15%;
+          flex: 1 0 15%;
+}
+main .wrapper .blogMain .blogPost .commentContainer .commentPostOne .commentPostOneText {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 80%;
+          flex: 1 0 80%;
+}
+main .wrapper .blogMain .blogPost .commentContainer .commentPostOne .commentPostOneText .commentPoster {
+  font-style: italic;
+  font-weight: bold;
+  color: #285e64;
+  margin: 10px 0;
+}
+main .wrapper .blogMain .blogPost .commentContainer .commentPostTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: white;
+  padding: 35px;
+  gap: 20px;
+  border-bottom: 5px solid #f6a823;
+}
+main .wrapper .blogMain .blogPost .commentContainer .commentPostTwo .commentPostTwoImage {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 15%;
+          flex: 1 0 15%;
+}
+main .wrapper .blogMain .blogPost .commentContainer .commentPostTwo .commentPostTwoText {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 80%;
+          flex: 1 0 80%;
+}
+main .wrapper .blogMain .blogPost .commentContainer .commentPostTwo .commentPostTwoText .commentPoster {
+  font-style: italic;
+  font-weight: bold;
+  color: #285e64;
+  margin: 10px 0;
+}
+main .wrapper .blogMain .postCommentFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+main .wrapper .blogMain .postCommentFormContainer .formName,
+main .wrapper .blogMain .postCommentFormContainer .formEmail {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 20px);
+          flex: 1 0 calc(50% - 20px);
+}
+main .wrapper .blogMain .postCommentFormContainer .formComment,
+main .wrapper .blogMain .postCommentFormContainer .blogPageButton {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+main .wrapper .blogMain .postCommentFormContainer .formName input,
+main .wrapper .blogMain .postCommentFormContainer .formEmail input,
+main .wrapper .blogMain .postCommentFormContainer .formComment textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 0 20px 30px;
+}
+main .wrapper .blogMain .postCommentFormContainer input::-webkit-input-placeholder, main .wrapper .blogMain .postCommentFormContainer textarea::-webkit-input-placeholder {
+  font-style: italic;
+}
+main .wrapper .blogMain .postCommentFormContainer input::-moz-placeholder, main .wrapper .blogMain .postCommentFormContainer textarea::-moz-placeholder {
+  font-style: italic;
+}
+main .wrapper .blogMain .postCommentFormContainer input:-ms-input-placeholder, main .wrapper .blogMain .postCommentFormContainer textarea:-ms-input-placeholder {
+  font-style: italic;
+}
+main .wrapper .blogMain .postCommentFormContainer input::-ms-input-placeholder, main .wrapper .blogMain .postCommentFormContainer textarea::-ms-input-placeholder {
+  font-style: italic;
+}
+main .wrapper .blogMain .postCommentFormContainer input::placeholder,
+main .wrapper .blogMain .postCommentFormContainer textarea::placeholder {
+  font-style: italic;
+}
+main .wrapper .blogMain .postCommentFormContainer .formName input,
+main .wrapper .blogMain .postCommentFormContainer .formEmail input {
+  height: 100px;
+}
+main .wrapper .blogMain .postCommentFormContainer .formComment textarea {
+  height: 500px;
 }
