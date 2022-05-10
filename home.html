@@ -13,12 +13,19 @@
     <div class="wrapper">
       <ul>
         <li><a href="./home.html">Home</a></li>
-        <li><a href=".about">About</a></li>
+        <li><a href="./home.html#sophieIntro">About</a></li>
         <li><a href="./home.html" class="logo"><h2>Sophie</h2></a></li>
         <li><a href="./blog.html">Blog</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
-      <i class="fa-solid fa-ellipsis-vertical"></i>
+      <label for="toggle">Sophie</label>
+      <input type="checkbox" id="toggle" name="toggle" class="sr-only">
+      <ul class="sliding_menu">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./home.html#sophieIntro">About</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
     </div>
   </nav> <!-- END of NAV -->
   <header class="homeHeader">
@@ -34,7 +41,7 @@
     </div>
   </header> <!-- END of Header -->
   <main class="homeMain">
-    <section class="sophieIntro">
+    <section class="sophieIntro" id="sophieIntro">
       <div class="wrapper">
         <h2>who is Sophie?</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, doloribus amet. Molestiae autem illum error minima magni! Necessitatibus, impedit obcaecati ducimus odio provident, atque ut aspernatur debitis a tenetur quae ab voluptate! Laboriosam aliquid obcaecati facere neque accusamus, quia facilis quis quaerat, nobis dolorum explicabo ipsam! Aperiam commodi ullam sed.</p>
@@ -73,25 +80,25 @@
         <div class="extraLinks">
           <ul>
             <li>
-              <a href="#">
+              <a href="#extraPictures">
                 <h3 class="photosLink">Photos</h3>
               </a>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, incidunt.</p>
             </li>
             <li>
-              <a href="#">
+              <a href="#sophieIntro">
                 <h3 class="aboutLink">About</h3>
               </a>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, modi!</p>
             </li>
             <li>
-              <a href="#">
+              <a href="./blog.html#blogMain">
                 <h3 class="blogLink">Blog</h3>
               </a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, incidunt.</p>
             </li>
             <li>
-              <a href="#">
+              <a href="./contact.html#contactMain">
                 <h3 class="getInTouchLink">Get in Touch</h3>
               </a>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, officiis.</p>
@@ -113,7 +120,7 @@
         </div> <!-- END of Journey section -->
       </div>
     </section>
-    <section class="extraPictures">
+    <section class="extraPictures" id="extraPictures">
       <div class="wrapper">
         <ul class="extraPicturesContainer">
           <li>

@@ -13,12 +13,19 @@
     <div class="wrapper">
       <ul>
         <li><a href="./home.html">Home</a></li>
-        <li><a href=".about">About</a></li>
+        <li><a href="./home.html#sophieIntro">About</a></li>
         <li><a href="./home.html" class="logo"><h2>Sophie<span class="sr-only"> - Blog page</span></h2></a></li>
         <li><a href="./blog.html">Blog</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
-      <i class="fa-solid fa-ellipsis-vertical"></i>
+      <label for="toggle">Sophie</label>
+      <input type="checkbox" id="toggle" name="toggle" class="sr-only">
+      <ul class="sliding_menu">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./home.html#sophieIntro">About</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
     </div>
   </nav> <!-- END of NAV -->
   <header class="blogHeader">
@@ -26,7 +33,7 @@
       <h1>Blog</h1>
     </div>
   </header> <!-- END of Header -->
-  <main class="blogMain">
+  <main class="blogMain" id="blogMain">
     <div class="wrapper">
       <aside class="blogInfo">
         <div class="aboutSophie">
@@ -44,7 +51,7 @@
           </ul>
         </div>
       </aside> <!-- END of blog info section-->
-      <section class="blogPost">
+      <section class="blogPost" id="blogPost">
         <article class="blogPostContainer">
           <div class="currentBlogPost">
             <h3>Why I became a blogger</h3>

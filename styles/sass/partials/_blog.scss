@@ -3,11 +3,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 400px;
+  height: 475px;
   h1 {
     margin: 0;
     position: relative;
-    bottom: -350px;
+    bottom: -425px;
     left: 0;
   }
 }
@@ -45,18 +45,18 @@
           margin-top: 0;
         }
         ul li {
-          padding-left: 10px;
-        }
-        ul li::before {
-          content: "\2022";
-          color: $orangeColor;
-          font-weight: bold;
-          display: inline-block;
-          width: 1em;
-        }
-        a {
-          font-weight: normal;
-          text-transform: none;
+          padding-left: 15px;
+          a {
+            font-weight: normal;
+            text-transform: none;
+          }
+          a::before {
+            content: "\2022";
+            color: $orangeColor;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+          }
         }
       }
     }

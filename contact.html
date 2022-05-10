@@ -13,12 +13,19 @@
     <div class="wrapper">
       <ul>
         <li><a href="./home.html">Home</a></li>
-        <li><a href=".about">About</a></li>
+        <li><a href="./home.html#sophieIntro">About</a></li>
         <li><a href="./home.html" class="logo"><h2>Sophie<span class="sr-only"> - contact page</span></h2></a></li>
         <li><a href="./blog.html">Blog</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
-      <i class="fa-solid fa-ellipsis-vertical"></i>
+      <label for="toggle">Sophie</label>
+      <input type="checkbox" id="toggle" name="toggle" class="sr-only">
+      <ul class="sliding_menu">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./home.html#sophieIntro">About</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
     </div>
   </nav> <!-- END of NAV -->
   <header class="contactHeader">
@@ -26,9 +33,9 @@
       <h1>Get in touch</h1>
     </div>
   </header> <!-- END of Header -->
-  <main class="contactMain">
+  <main class="contactMain" id="contactMain">
     <div class="wrapper">
-      <aside class="contactInfo">
+      <aside class="contactInfo" id="contactInfo">
         <div class="snsIconsContainer">
           <ul class="snsIcons">
             <li>
