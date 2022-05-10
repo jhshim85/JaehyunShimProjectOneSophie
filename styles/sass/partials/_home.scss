@@ -9,13 +9,13 @@
     gap: 20px;
     .headerTextContainer {
       min-width: 350px;
-      flex: 1 0 calc(45% - 20px);
+      flex: 1 0 calc(50% - 20px);
       text-align: center;
       align-self: center;
+      padding-top: 60px;
       h1 {
         display: inline-block;
         position: relative;
-        align-self: center;
         top: 0;
         left: 0;
       }
@@ -33,16 +33,16 @@
       }
     }
     .headerImageContainer {
-      flex: 1 0 calc(55% - 20px);
+      flex: 1 0 calc(50% - 20px);
       height: 500px;
       position: relative;
       align-self: center;
       img {
         width: 60%;
         height: auto;
-        min-width: 350px;
+        min-width: 300px;
         position: absolute;
-        top: 0;
+        top: 60px;
         left: 100px;
         right: 0;
         box-shadow: 20px 20px 0 white;
@@ -68,7 +68,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    padding: 50px 0;
     .favouriteThing {
       display: flex;
       justify-content: center;
@@ -79,7 +79,7 @@
         background-color: $redColor;
         display: flex;
         justify-content: flex-end;
-        transform: translateY(-30px);
+        transform: translateY(-80px);
         img {
           width: 80%;
           transform: translate(-20px, -20px);
@@ -117,7 +117,7 @@
         background-color: $orangeColor;
         display: flex;
         justify-content: flex-start;
-        transform: translateY(50px);
+        transform: translateY(100px);
         img {
           width: 80%;
           transform: translate(-20px, -20px);

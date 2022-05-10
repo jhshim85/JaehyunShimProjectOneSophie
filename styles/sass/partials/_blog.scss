@@ -29,6 +29,10 @@
       flex-wrap: wrap;
       p {
         margin: 0;
+        span {
+          font-weight: bold;
+          color: $greyBlueColor;
+        }
       }
       .aboutSophie,
       .recentPostsLink {
@@ -40,7 +44,6 @@
       }
       .recentPostsLink {
         margin-top: 50px;
-        padding: 35px;
         h4 {
           margin-top: 0;
         }

@@ -1,0 +1,203 @@
+@media (max-width: 1250px) {
+  .homeMain .sophieThing .favouriteThing .favouriteImageContainer {
+    transform: translateY(-60px);
+  }
+  .homeMain .sophieThing .travelled .travelledImageContainer {
+    transform: translateY(70px);
+  }
+  .homeMain .sophieThing .favouriteThing .favouriteImageContainer img {
+    transform: translate(-20px, -15px);
+    width: 85%;
+  }
+  .homeMain .sophieThing .travelled .travelledImageContainer img {
+    transform: translate(15px, -20px);
+    width: 85%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .homeMain .sophieThing .favouriteThing .favouriteImageContainer {
+    transform: translateY(0);
+  }
+  .homeMain .sophieThing .travelled .travelledImageContainer {
+    transform: translateY(0);
+  }
+  .homeMain .sophieThing .favouriteThing .favouriteImageContainer img {
+    transform: translate(-15px, -15px);
+  }
+  .homeMain .sophieThing .travelled .travelledImageContainer img {
+    transform: translate(15px, -15px);
+  }
+}
+
+@media (max-width: 977px) {
+  .homeHeader .headerContainer .headerImageContainer img {
+    width: 50%;
+    left: 30px;
+  }
+  .blogHeader {
+    background-position: 60% 0%;
+  }
+  .blogMain .wrapper .blogInfo .aboutSophie,
+  .blogMain .wrapper .blogInfo .recentPostsLink,
+  .blogMain .wrapper .blogPost .blogPostContainer .currentBlogPost,
+  .blogMain .wrapper .blogPost .blogPostContainer .commentContainer .commentPostOne,
+  .blogMain .wrapper .blogPost .blogPostContainer .commentContainer .commentPostTwo {
+    padding: 30px;
+  }
+  .blogMain .wrapper,
+  .blogMain .wrapper .blogInfo,
+  .blogMain .wrapper .blogPost,
+  .blogMain .wrapper .blogPost .blogPostContainer {
+    gap: 35px;
+  }
+  .blogMain .wrapper .blogInfo .recentPostsLink {
+    margin-top: 35px;
+  }
+  .contactMain .wrapper {
+    gap: 35px;
+  }
+  .contactMain .wrapper .contactInfo {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 792px) {
+  html {
+      font-size: 100%;
+  }
+  .homeHeader .headerContainer {
+    flex-direction: column;
+    align-content: center;
+  }
+  .homeHeader .headerContainer .headerImageContainer {
+    position: static;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+  }
+  .homeHeader .headerContainer .headerImageContainer img {
+    position: static;
+  }
+  .mainMenuBar {
+    visibility: hidden;
+  }
+  nav {
+    background: none;
+    position: fixed;
+  }
+  nav .wrapper label[for="toggle"] {
+    visibility: visible;
+  }
+  .homeMain .sophieThing .favouriteThing {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .homeMain .sophieThing .travelled {
+    flex-direction: column;
+    text-align: left;
+  }
+  .homeMain .sophieThing .travelled .travelledTextContainer {
+    order: 2;
+    align-items: flex-start;
+  }
+  .homeMain .sophieThing .favouriteThing .favouriteImageContainer img {
+    transform: translate(-65px, -15px);
+  }
+  .homeMain .sophieThing .travelled .travelledImageContainer img {
+    transform: translate(65px, -15px);
+  }
+  .blogHeader h1 {
+    position: static;
+    padding-top: 150px;
+  }
+  .blogMain .wrapper {
+    flex-direction: column;
+  }
+  .blogMain .wrapper .blogInfo .aboutSophie {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .blogMain .wrapper .blogInfo .aboutSophie .aboutSophieImageContainer {
+    flex: 1 0 calc(30% - 20px);
+  }
+  .blogMain .wrapper .blogInfo .aboutSophie .aboutSophieTextContainer {
+    flex: 1 0 calc(60% - 20px);
+  }
+  .blogMain .wrapper .blogInfo .aboutSophie .aboutSophieTextContainer h4 {
+    margin-top: 0;
+  }
+  .blogMain .wrapper .blogInfo .aboutSophie,
+  .blogMain .wrapper .blogInfo .recentPostsLink,
+  .blogMain .wrapper .blogPost .blogPostContainer .currentBlogPost,
+  .blogMain .wrapper .blogPost .blogPostContainer .commentContainer .commentPostOne,
+  .blogMain .wrapper .blogPost .blogPostContainer .commentContainer .commentPostTwo {
+    padding: 20px;
+  }
+  .blogMain .wrapper,
+  .blogMain .wrapper .blogInfo,
+  .blogMain .wrapper .blogPost,
+  .blogMain .wrapper .blogPost .blogPostContainer {
+    gap: 20px;
+  }
+  .blogMain .wrapper .blogInfo .recentPostsLink {
+    margin-top: 20px;
+  }
+  .contactHeader h1 {
+    position: static;
+    padding-top: 150px;
+  }
+  .contactMain .wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .contactMain .wrapper .contactInfo {
+    align-self: stretch;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .contactMain .wrapper .contactForm {
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 656px) {
+  .homeMain .sophieThing .favouriteThing .favouriteImageContainer {
+    justify-content: flex-start;
+  }
+  .homeMain .sophieThing .travelled .travelledImageContainer {
+    justify-content: flex-end;
+  }
+  .homeMain .sophieThing .favouriteThing .favouriteImageContainer img {
+    transform: translate(0, 0);
+  }
+  .homeMain .sophieThing .travelled .travelledImageContainer img {
+    transform: translate(0, 0);
+  }
+  .homeMain .sophieJourney .extraLinks ul,
+  .homeMain .sophieJourney .aboutJourney {
+    flex-direction: column;
+    align-items: center;
+  }
+  .homeMain .sophieJourney .aboutJourney {
+    padding-left: 0;
+  }
+  .homeMain .sophieJourney .aboutJourney .journeyImageContainer {
+    align-self: flex-start;
+  }
+  .homeMain .sophieJourney .aboutJourney .journeyImageContainer img {
+    width: 50%;
+    height: auto;
+  }
+  .homeMain .sophieJourney .aboutJourney .journeyTextContainer {
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 62.5%;
+  }
+}

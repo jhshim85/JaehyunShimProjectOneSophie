@@ -1,6 +1,8 @@
 nav {
   position: sticky;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 10;
   background-color: $orangeColor;
   color: $blackColor;
@@ -10,7 +12,7 @@ nav {
       justify-content: center;
       align-items: center;
       a {
-        padding: 15px 30px;
+        padding: 15px 20px;
         h2 {
           font-family: $headerFont;
           padding: 0 30px;
@@ -19,7 +21,7 @@ nav {
     }
     label[for="toggle"] {
       visibility: hidden;
-      position: absolute;
+      position: fixed;
       z-index: 10;
       text-transform: uppercase;
       top: 10px;
@@ -27,17 +29,17 @@ nav {
       border-top: 2px solid $blackColor;
       border-bottom: 2px solid $blackColor;
     }
-    input[type="checkbox"]:checked + .sliding_menu {
+    input[type="checkbox"]:checked + .slidingMenu {
       right: 0;
     }
-    .sliding_menu {
-      position: absolute;
+    .slidingMenu {
+      position: fixed;
       background-color: $orangeColor;
       color: $blackColor;
       z-index: 10;
       top: 50px;
-      width: 8%;
-      right: -8%;
+      width: 20%;
+      right: -20%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
