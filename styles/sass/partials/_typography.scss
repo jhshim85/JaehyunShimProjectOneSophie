@@ -63,9 +63,13 @@ button {
   text-align: center;
   text-transform: uppercase;
 }
+button:hover,
+button:focus {
+  color: rgb(246, 246, 246);
+}
 
 a {
-  display: block;
+  display: inline-block;
   line-height: 29px;
   text-decoration: none;
   text-transform: uppercase;

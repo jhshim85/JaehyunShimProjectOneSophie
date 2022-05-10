@@ -165,6 +165,16 @@
         .getInTouchLink::before {
           content: "\f879";
         }
+        a,
+        h3::before {
+          transition: 0.2s;
+        }
+        a:hover,
+        a:focus,
+        h3:hover::before,
+        h3:focus::before {
+          color: $tealColor;
+        }
       }
     }
     img {

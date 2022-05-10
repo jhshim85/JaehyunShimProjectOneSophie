@@ -299,8 +299,13 @@ button {
   text-transform: uppercase;
 }
 
+button:hover,
+button:focus {
+  color: rgb(246, 246, 246);
+}
+
 a {
-  display: block;
+  display: inline-block;
   line-height: 29px;
   text-decoration: none;
   text-transform: uppercase;
@@ -350,6 +355,10 @@ button {
   cursor: pointer;
 }
 
+.pageTitle {
+  color: rgb(246, 246, 246);
+}
+
 nav {
   position: sticky;
   top: 0;
@@ -394,8 +403,8 @@ nav .wrapper .sliding_menu {
   color: #2c2c2c;
   z-index: 10;
   top: 50px;
-  width: 10%;
-  right: -10%;
+  width: 8%;
+  right: -8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,9 +423,10 @@ nav .wrapper .sliding_menu li {
       align-self: stretch;
 }
 nav .wrapper .sliding_menu li a {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgb(246, 246, 246);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  display: block;
 }
 nav .wrapper .sliding_menu li a:hover,
 nav .wrapper .sliding_menu li a:focus {
@@ -696,6 +706,17 @@ footer p {
 }
 .homeMain .sophieJourney .extraLinks ul li .getInTouchLink::before {
   content: "\f879";
+}
+.homeMain .sophieJourney .extraLinks ul li a,
+.homeMain .sophieJourney .extraLinks ul li h3::before {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.homeMain .sophieJourney .extraLinks ul li a:hover,
+.homeMain .sophieJourney .extraLinks ul li a:focus,
+.homeMain .sophieJourney .extraLinks ul li h3:hover::before,
+.homeMain .sophieJourney .extraLinks ul li h3:focus::before {
+  color: #05afc1;
 }
 .homeMain .sophieJourney img {
   width: 100%;
