@@ -386,25 +386,31 @@ nav .wrapper ul a h2 {
   font-family: "Lora", serif;
   padding: 0 30px;
 }
-nav .wrapper label[for=toggle] {
+
+.slidingMenu {
   visibility: hidden;
   position: fixed;
+  display: inline-block;
   z-index: 10;
   text-transform: uppercase;
-  top: 10px;
+  font-weight: bold;
+  top: 0px;
   right: 10px;
-  border-top: 2px solid #2c2c2c;
-  border-bottom: 2px solid #2c2c2c;
+  border: 3px solid #4f4f4f;
+  color: #4f4f4f;
+  padding: 5px 10px;
+  -webkit-box-shadow: 0px 10px 5px #a82706;
+          box-shadow: 0px 10px 5px #a82706;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
-nav .wrapper input[type=checkbox]:checked + .slidingMenu {
-  right: 0;
-}
-nav .wrapper .slidingMenu {
+
+.slidingMenuBar {
   position: fixed;
   background-color: #f6a823;
   color: #2c2c2c;
   z-index: 10;
-  top: 50px;
+  top: 80px;
   width: 20%;
   right: -20%;
   display: -webkit-box;
@@ -420,19 +426,32 @@ nav .wrapper .slidingMenu {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-nav .wrapper .slidingMenu li {
+.slidingMenuBar li {
   -ms-flex-item-align: stretch;
       align-self: stretch;
 }
-nav .wrapper .slidingMenu li a {
+.slidingMenuBar li a {
   border-bottom: 2px solid rgb(246, 246, 246);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   display: block;
 }
-nav .wrapper .slidingMenu li a:hover,
-nav .wrapper .slidingMenu li a:focus {
+.slidingMenuBar li a:hover,
+.slidingMenuBar li a:focus {
   background-color: #05afc1;
+}
+
+.clickedMenu {
+  top: 5px;
+  -webkit-box-shadow: 0px 5px 5px #a82706;
+          box-shadow: 0px 5px 5px #a82706;
+  color: #f0efed;
+  border-color: #f0efed;
+  background-color: #05afc1;
+}
+
+.clickedMenuBar {
+  right: 0%;
 }
 
 footer {
@@ -1322,7 +1341,7 @@ footer p {
     position: fixed;
   }
 
-  nav .wrapper label[for=toggle] {
+  .slidingMenu {
     visibility: visible;
   }
 
