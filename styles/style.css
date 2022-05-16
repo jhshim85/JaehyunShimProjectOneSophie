@@ -807,13 +807,29 @@ footer p {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(33.3333333333% - 20px);
           flex: 1 0 calc(33.3333333333% - 20px);
-  height: 400px;
-  min-width: 400px;
+  min-width: 300px;
 }
 .homeMain .extraPictures .extraPicturesContainer li img {
-  min-width: 350px;
+  min-width: 250px;
   height: 100%;
   margin: 0 auto;
+}
+
+.prevArrow,
+.nxtArrow {
+  visibility: hidden;
+  color: #f6a823;
+  font-size: 2rem;
+  position: absolute;
+  top: 175px;
+}
+
+.prevArrow {
+  left: 0;
+}
+
+.nxtArrow {
+  right: 0;
 }
 
 .blogHeader {
@@ -1463,6 +1479,29 @@ footer p {
   .contactMain .wrapper .contactForm {
     -ms-flex-item-align: stretch;
         align-self: stretch;
+  }
+}
+@media (max-width: 703px) {
+  .homeMain .extraPictures {
+    position: relative;
+    height: 350px;
+  }
+
+  .homeMain .extraPictures .extraPicturesContainer {
+    display: block;
+  }
+
+  .homeMain .extraPictures .extraPicturesContainer li {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .prevArrow, .nxtArrow {
+    visibility: visible;
   }
 }
 @media (max-width: 656px) {

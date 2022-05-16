@@ -161,6 +161,27 @@
   }
 }
 
+@media (max-width: 703px) {
+  .homeMain .extraPictures {
+    position: relative;
+    height: 350px;
+  }
+  .homeMain .extraPictures .extraPicturesContainer {
+    display: block;
+  }
+  .homeMain .extraPictures .extraPicturesContainer li {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .prevArrow, .nxtArrow {
+    visibility: visible;
+  }
+}
+
 @media (max-width: 656px) {
   .homeMain .sophieThing .favouriteThing .favouriteImageContainer {
     justify-content: flex-start;
