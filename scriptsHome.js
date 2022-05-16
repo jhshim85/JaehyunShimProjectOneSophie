@@ -1,12 +1,3 @@
-// sliding-menu
-const menuLogo = document.querySelector('.slidingMenu');
-const menuBar = document.querySelector('.slidingMenuBar');
-function menuClick(event) {
-  event.target.classList.toggle('clickedMenu');
-  menuBar.classList.toggle('clickedMenuBar');
-}
-menuLogo.addEventListener('click', menuClick);
-
 // carousel image slider on home page
 const extraPicsContainer = document.querySelector('.extraPicturesContainer');
 const extraPicsLi = document.querySelectorAll('.extraPicturesContainer li');
