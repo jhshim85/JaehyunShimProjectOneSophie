@@ -107,6 +107,7 @@
           align-items: flex-start;
           text-align: left;
           gap: 25px;
+          border-bottom: 5px solid $orangeColor;
           .commentPostOne {
             display: flex;
             align-items: flex-start;
@@ -132,7 +133,6 @@
             background-color: white;
             padding: 35px;
             gap: 20px;
-            border-bottom: 5px solid $orangeColor;
             .commentPostTwoImage {
               flex: 1 0 15%;
             }
@@ -182,6 +182,25 @@
           height: 500px;
         }
       }
+    }
+  }
+}
+.commentPost {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  padding: 35px;
+  gap: 20px;
+  .commentPostPic {
+    flex: 1 0 15%;
+  }
+  .commentPostText {
+    flex: 1 0 80%;
+    .commentPoster {
+      font-style: italic;
+      font-weight: bold;
+      color: $greyBlueColor;
+      margin: 10px 0;
     }
   }
 }
