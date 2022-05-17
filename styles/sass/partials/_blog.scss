@@ -186,6 +186,7 @@
   }
 }
 .commentPost {
+  align-self: stretch;
   display: flex;
   align-items: flex-start;
   background-color: white;
@@ -203,4 +204,30 @@
       margin: 10px 0;
     }
   }
+}
+.popup {
+  background-color: $orangeColor;
+  width: 50%;
+  padding: 30px;
+  display: none;
+  position: relative;
+  transform: translate(0%, -200%);
+  p {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+.profilePicContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.profilePicContainer li {
+  width: 50px;
+  height: 50px;
+}
+.profilePic {
+  width: 100%;
+  height: 100%;
 }

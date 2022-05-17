@@ -2,11 +2,23 @@
 const commentForm = document.querySelector('.commentForm');
 const commentPostSubmit = document.querySelector('.commentContainer');
 
-const daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const monthsOfTheYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 function commentSubmit(e) {
   e.preventDefault();
+  const profilePic = document.querySelector('.popup');
+  profilePic.style.display = 'block';
+
+  const profilePicSelect = document.querySelector('.profilePicContainer');
+  const selectedPic = document.querySelectorAll('.profilePic');
+  console.log(selectedPic);
+  const selectList = Array.from(selectedPic);
+  console.log(selectList);
+  const finalPic = selectList.addEventListener('click', (i) => {
+    selectedPic[i].outerHTML;
+  });
+  console.log(finalPic);
   const nameSubmit = document.getElementById('name');
   const name = nameSubmit.value;
   const emailSubmit = document.getElementById('email');
@@ -20,21 +32,18 @@ function commentSubmit(e) {
   commentPostPic.classList.add('commentPostPic');
   const commentPostText = document.createElement('div');
   commentPostText.classList.add('commentPostText');
-  
   const commentPoster = document.createElement('p');
   commentPoster.classList.add('commentPoster');
-  const commentPostDate = new Date();
-  commentPostDate.setUTCDate(16);
-  const commentName = document.createElement('span');
   const commentText = document.createElement('p');
   
   commentText.textContent = comment;
-  commentName.textContent = name;
-  commentPoster.append(commentPostDate, name);
+  const commentPostDate = new Date();
+  commentPostDate.setUTCDate(16);
+  commentPoster.textContent = `${days[commentPostDate.getDay()]} ${months[commentPostDate.getMonth()]} ${commentPostDate.getDate()}, ${commentPostDate.getFullYear()} by ${name}`;
+  
   commentPostText.append(commentPoster, commentText);
   commentPost.append(commentPostPic, commentPostText);
   commentPostSubmit.append(commentPost);
-  console.log(commentPostText);
 }
 
 commentForm.addEventListener('submit', commentSubmit);
