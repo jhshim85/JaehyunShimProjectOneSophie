@@ -225,17 +225,21 @@
     }
   }
 }
+
 .prevArrow,
 .nxtArrow {
   visibility: hidden;
   color: $orangeColor;
   font-size: 2rem;
   position: absolute;
-  top: 175px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .prevArrow {
-  left: 0;
+  left: 20%;
+  transform: translateX(-20%);
 }
 .nxtArrow {
-  right: 0;
+  right: 20%;
+  transform: translateX(20%);
 }

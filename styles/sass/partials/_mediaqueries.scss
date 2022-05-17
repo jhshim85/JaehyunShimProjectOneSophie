@@ -164,18 +164,24 @@
 @media (max-width: 703px) {
   .homeMain .extraPictures {
     position: relative;
-    height: 350px;
+    margin: 50px 0;
+    height: 500px;
+  }
+  .homeMain .extraPictures .wrapper {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
   }
   .homeMain .extraPictures .extraPicturesContainer {
-    display: block;
+    position: relative;
+    height: 100%;
+    transition: transform 0.5s;
   }
   .homeMain .extraPictures .extraPicturesContainer li {
     width: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
-    left: 0;
   }
   .prevArrow, .nxtArrow {
     visibility: visible;
